@@ -10,7 +10,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
     
     - name: Install dependencies
       run: |
@@ -48,7 +48,7 @@ jobs:
         dpkg-deb --build package house-theme-bridge.deb
         
     - name: Upload artifact
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: house-theme-bridge-package
         path: build/house-theme-bridge.deb
