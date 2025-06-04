@@ -46,6 +46,7 @@ jobs:
         EOF
         
         dpkg-deb --build package house-theme-bridge.deb
+        mv house-theme-bridge.deb build/
         
     - name: Upload artifact
       uses: actions/upload-artifact@v4
