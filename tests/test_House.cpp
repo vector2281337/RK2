@@ -13,12 +13,12 @@ TEST(HouseTest, Apartment) {
 }
 
 TEST(HouseTest, Castle) {
-    // Create the colors first
+   
     Color wall(1,1,1);
     Color floor(2,2,2);
     Color ceiling(3,3,3);
     
-    // Create shared_ptr explicitly
+  
     auto customTheme = std::shared_ptr<CustomTheme>(
         new CustomTheme("Test", wall, floor, ceiling)
     );

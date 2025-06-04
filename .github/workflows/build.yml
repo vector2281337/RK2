@@ -41,7 +41,7 @@ jobs:
         Section: base
         Priority: optional
         Architecture: amd64
-        Maintainer: Your Name <your.email@example.com>
+        Maintainer: vector2281337 <vvlukanin13@mail.ru>
         Description: House Theme Bridge Pattern Example
         EOF
         
@@ -53,10 +53,4 @@ jobs:
         name: house-theme-bridge-package
         path: build/house-theme-bridge.deb
         
-    - name: Create Release
-      if: github.ref == 'refs/heads/main'
-      uses: softprops/action-gh-release@v1
-      with:
-        files: build/house-theme-bridge.deb
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+ 
